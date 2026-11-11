@@ -56,7 +56,7 @@ group :development, :test do
   gem "rspec-rails", "~> 8.1"
   gem "ffaker", ">= 2.25"
   gem "simplecov", ">= 1.3.2", require: false
-  gem "rubocop", ">= 1.92.2"
+  gem "rubocop", ">= 1.92.2", require: false
 end
 
 group :test do
