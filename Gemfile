@@ -36,8 +36,8 @@ gem "image_processing", "~> 1.2"
 gem "rack-cors"
 
 # Swagger
-gem 'rswag-api'
-gem 'rswag-ui'
+gem "rswag-api"
+gem "rswag-ui"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -52,13 +52,13 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
 
-  gem 'rswag-specs', '>= 2.17'
-  gem 'rspec-rails', '~> 8.1'
-  gem 'ffaker', '>= 2.25'
-  gem 'simplecov', '>= 1.3.2', require: false
-  gem 'rubocop', '>= 1.92.2'
+  gem "rswag-specs", ">= 2.17"
+  gem "rspec-rails", "~> 8.1"
+  gem "ffaker", ">= 2.25"
+  gem "simplecov", ">= 1.3.2", require: false
+  gem "rubocop", ">= 1.92.2"
 end
 
 group :test do
-  gem 'simplecov', '>= 1.3.2', require: false
+  gem "simplecov", ">= 1.3.2", require: false
 end
