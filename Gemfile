@@ -52,6 +52,12 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
 
-  gem 'rswag-specs'
-  gem 'rspec-rails', '~> 8.0.0'
+  gem 'rswag-specs', '>= 2.17'
+  gem 'rspec-rails', '~> 8.1'
+  gem 'ffaker', '>= 2.25'
+  gem 'simplecov', '>= 1.3.2', require: false
+end
+
+group :test do
+  gem 'simplecov', '>= 1.3.2', require: false
 end
