@@ -57,6 +57,7 @@ group :development, :test do
   gem "ffaker", ">= 2.25"
   gem "simplecov", ">= 1.3.2", require: false
   gem "rubocop", ">= 1.92.2", require: false
+  gem "factory_bot_rails", ">= 6.5.1"
 end
 
 group :test do
