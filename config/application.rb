@@ -48,7 +48,7 @@ module SampleMarketplaceApi
       generator.javascripts = false
       generator.helper = false
     end
-    config.autoload_paths += %W(\#{config.root/lib})
+    config.eager_load_paths << Rails.root.join('lib')
     config.api_only = true
   end
 end
