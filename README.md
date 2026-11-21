@@ -87,3 +87,5 @@ bundle exec bundler-audit check
 - Erros: `4xx/5xx` com `{ "errors": [ ... ] }`;
 - Pagination: `page` / `per_page` + meta (`total`, `current_page`, `total_pages`);
 - Versionamento: prefixo `/api/v1`.
+
+teste
