@@ -41,14 +41,14 @@ module SampleMarketplaceApi
     # Skip views, helpers and assets when generating a new resource.
     config.generators do |generator|
       generator.test_framework :rspec, fixture: true
-      generator.fixture_replacement :factory_bot, dir: 'spec/factories'
+      generator.fixture_replacement :factory_bot, dir: "spec/factories"
       generator.view_specs = false
       generator.helper_specs = false
       generator.stylesheets = false
       generator.javascripts = false
       generator.helper = false
     end
-    config.eager_load_paths << Rails.root.join('lib')
+    config.eager_load_paths << Rails.root.join("lib")
     config.api_only = true
   end
 end
