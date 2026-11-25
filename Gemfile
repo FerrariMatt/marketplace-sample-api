@@ -63,6 +63,11 @@ group :development, :test do
   gem "factory_bot_rails", ">= 6.5.1"
 end
 
+group :development do
+  # Language server used by Claude Code / editors for code intelligence
+  gem "ruby-lsp", ">= 0.26", require: false
+end
+
 group :test do
   gem "shoulda-matchers", ">= 8.0.1"
   gem "simplecov", ">= 1.3.2", require: false
