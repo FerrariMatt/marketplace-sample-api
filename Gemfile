@@ -64,5 +64,6 @@ group :development, :test do
 end
 
 group :test do
+  gem 'shoulda-matchers', '>= 8.0.1'
   gem "simplecov", ">= 1.3.2", require: false
 end
