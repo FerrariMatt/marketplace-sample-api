@@ -4,6 +4,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Rails 8.1 API-only app (Ruby 3.4.13, PostgreSQL, Devise, RSpec, rswag). Study project for a marketplace API.
 
+Read next: `.context/contexto.md` → `.context/decisoes.md` → `.context/plano.md`. Ferrari writes the code by hand; Claude reviews and assists.
+
 ## Running commands
 
 - Ruby comes from **rbenv inside WSL** and only loads in an interactive bash. From Windows, always run:
@@ -11,7 +13,7 @@ Rails 8.1 API-only app (Ruby 3.4.13, PostgreSQL, Devise, RSpec, rswag). Study pr
   (A plain `bash -lc` or the Windows `bundle` on PATH picks up the wrong Ruby.)
 - Tests are **RSpec**, not Minitest (test_unit railtie is disabled; README's `bin/rails test` is wrong):
   `bundle exec rspec spec lib/spec` — `lib/spec/` is outside the default pattern and must be passed explicitly.
-- Lint/security (same as `bin/ci`): `bin/rubocop`, `bin/bundler-audit`, `bin/brakeman --quiet --no-pager --exit-on-warn --exit-on-error`. GitHub CI runs these but **not** the test suite, so run specs locally.
+- Lint/security (same as `bin/ci`): `bin/rubocop`, `bin/bundler-audit`, `bin/brakeman --quiet --no-pager --exit-on-warn --exit-on-error`. GitHub CI (`.github/workflows/ci.yml`) runs these plus the RSpec suite against Postgres on every PR and push to `main`; it is the primary validation gate for a PR. Still run specs locally before pushing.
 
 ## API conventions
 
